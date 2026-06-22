@@ -1,0 +1,235 @@
+================================================================================
+Wechsels 非商用许可证 v1.0  (WNCPL v1.0)
+Wechsels Non-Commercial License v1.0
+Copyright (c) 2026 Wechsels (hry)
+================================================================================
+
+
+中文版
+================================================================================
+
+本许可证适用于 Wechsels(昵称:hry)创作并以本许可证发布的开源项目。
+在不违背本许可证条款的前提下,您可以自由地查看、修改及分发本项目。
+使用本项目即视为您已阅读、理解并同意本许可证的全部条款。
+
+────────────────────────────────────────────────────────────────────
+1. 定义
+────────────────────────────────────────────────────────────────────
+
+  1.1 "本项目"   指受本许可证保护的软件、源代码、文档及相关资源。
+  1.2 "作者"     指 Wechsels(昵称:hry),即本项目的版权持有人。
+  1.3 "使用者"   指依据本许可证使用本项目的任何个人或组织。
+  1.4 "衍生作品" 指基于本项目修改、翻译、改编或以其他方式二次创作
+                 的作品,不论其形式如何。
+  1.5 "商业使用" 指以获取商业利益或经济报酬为主要目的的行为,包括但
+                 不限于:
+                   a) 销售、出租、许可本项目或衍生作品;
+                   b) 将本项目或衍生作品集成到商业产品或服务中;
+                   c) 在营利性组织的内部运营中使用本项目;
+                   d) 基于本项目提供收费的技术支持、托管、SaaS
+                      或咨询服务;
+                   e) 其他以获取直接经济利益或商业优势为目的的行为。
+
+────────────────────────────────────────────────────────────────────
+2. 授予的权利
+────────────────────────────────────────────────────────────────────
+
+  在您遵守本许可证全部条款的前提下,作者授予您一项非独占、不可转让、
+  免许可费的权利,允许您:
+
+    - 查看、复制本项目的全部或部分内容;
+    - 修改本项目,创作衍生作品;
+    - 在非商业使用的前提下,分发本项目或衍生作品的源代码及二进制形式;
+    - 在非商业使用的前提下,将本项目或衍生作品用于个人学习、研究、
+      教育及非营利性活动。
+
+────────────────────────────────────────────────────────────────────
+3. 使用条件
+────────────────────────────────────────────────────────────────────
+
+  您在使用、再分发本项目或衍生作品时,必须同时满足以下全部条件:
+
+    a) 在源代码及所有副本的显著位置保留以下版权声明:
+         Copyright (c) 2026 Wechsels (hry)
+    b) 随本项目或衍生作品的所有分发版本附带本许可证文件的完整副本;
+    c) 在衍生作品中以显著方式注明所做的修改及修改日期;
+    d) 不得以任何形式暗示作者对您的衍生作品进行了背书、推荐或担保;
+    e) 衍生作品必须以本许可证(WNCPL v1.0)发布,且不得对本许可证
+       的核心条款(非商用、署名、相同方式共享)加以任何形式的弱化。
+
+────────────────────────────────────────────────────────────────────
+4. 限制
+────────────────────────────────────────────────────────────────────
+
+  4.1 您不得在未经作者事先书面许可的情况下,将本项目或衍生作品用于
+      任何形式的商业使用。
+  4.2 您不得将作者姓名、昵称、商标或项目名称用于任何形式的未经授权
+      的背书、广告宣传或推广活动。
+  4.3 您不得移除、隐藏或修改本项目中的任何版权声明、许可证声明或
+      作者归属信息。
+  4.4 您不得以任何技术手段规避本许可证所设置的限制。
+  4.5 上述限制同样适用于您所分发的衍生作品。
+
+────────────────────────────────────────────────────────────────────
+5. 免责声明
+────────────────────────────────────────────────────────────────────
+
+  本项目按"现状"提供,作者不对本项目做出任何形式的明示或暗示担保,
+  包括但不限于对适销性、特定用途适用性及非侵权性的担保。
+  使用本项目所产生的一切风险由您本人承担。
+
+────────────────────────────────────────────────────────────────────
+6. 责任限制
+────────────────────────────────────────────────────────────────────
+
+  在任何情况下,作者均不对因使用或无法使用本项目而产生的任何直接、
+  间接、附带、特殊、惩罚性或后果性的损害(包括但不限于数据丢失、
+  利润损失、业务中断等)承担任何责任,即便作者已被告知此类损害
+  发生的可能性。
+
+────────────────────────────────────────────────────────────────────
+7. 其他
+────────────────────────────────────────────────────────────────────
+
+  7.1 本许可证的某一条款被认定为无效或不可执行时,不影响其他条款
+      的效力。
+  7.2 本许可证受中华人民共和国法律管辖。因本许可证引发的争议,
+      双方应友好协商解决;协商不成的,提交作者所在地有管辖权的
+      人民法院诉讼解决。
+  7.3 作者保留对本许可证条款进行修订的权利,修订版本仅适用于经
+      作者明确标注使用新版本的项目。
+
+
+English Version
+================================================================================
+
+This License applies to the open-source project created by Wechsels
+(nickname: hry) and released under this License.
+Subject to the terms below, you are free to view, modify, and
+redistribute this Project.
+By using this Project, you acknowledge that you have read, understood,
+and agreed to all terms of this License.
+
+────────────────────────────────────────────────────────────────────
+1. Definitions
+────────────────────────────────────────────────────────────────────
+
+  1.1 "Project"       means the software, source code, documentation,
+                      and related resources protected by this License.
+  1.2 "Author"        means Wechsels (nickname: hry), the copyright
+                      holder of the Project.
+  1.3 "User"          means any individual or organization that uses
+                      the Project under this License.
+  1.4 "Derivative     means any work created by modifying,
+       Work"          translating, adapting, or otherwise transforming
+                      the Project, in any form.
+  1.5 "Commercial     means any use whose primary purpose is to obtain
+       Use"           commercial advantage or monetary compensation,
+                      including but not limited to:
+                        a) selling, renting, or licensing the Project
+                           or Derivative Works;
+                        b) incorporating the Project or Derivative
+                           Works into commercial products or services;
+                        c) using the Project in the internal operations
+                           of for-profit organizations;
+                        d) providing paid technical support, hosting,
+                           SaaS, or consulting services based on the
+                           Project;
+                        e) any other activity whose primary purpose is
+                           to obtain direct economic benefit or
+                           commercial advantage.
+
+────────────────────────────────────────────────────────────────────
+2. Grant of Rights
+────────────────────────────────────────────────────────────────────
+
+  Subject to your compliance with all terms of this License, the
+  Author grants you a non-exclusive, non-transferable, royalty-free
+  right to:
+
+    - view and copy all or part of the Project;
+    - modify the Project and create Derivative Works;
+    - distribute the source code and binary forms of the Project or
+      Derivative Works, solely for Non-Commercial purposes;
+    - use the Project or Derivative Works for personal learning,
+      research, education, and non-profit activities.
+
+────────────────────────────────────────────────────────────────────
+3. Conditions of Use
+────────────────────────────────────────────────────────────────────
+
+  When using or redistributing the Project or Derivative Works, you
+  must satisfy all of the following conditions:
+
+    a) preserve the following copyright notice in a prominent location
+       in the source code and all copies:
+         Copyright (c) 2026 Wechsels (hry)
+    b) include a complete copy of this License file with every
+       distributed version of the Project or Derivative Works;
+    c) clearly indicate in the Derivative Work any modifications made
+       and the date of such modifications;
+    d) do not, in any form, suggest that the Author endorses,
+       recommends, or warrants your Derivative Work;
+    e) release Derivative Works under this License (WNCPL v1.0), and
+       you may not weaken the core terms of this License
+       (Non-Commercial, Attribution, ShareAlike) in any form.
+
+────────────────────────────────────────────────────────────────────
+4. Restrictions
+────────────────────────────────────────────────────────────────────
+
+  4.1 You may not use the Project or Derivative Works for any form
+      of Commercial Use without the prior written permission of
+      the Author.
+  4.2 You may not use the Author's name, nickname, trademarks, or
+      project name for any form of unauthorized endorsement,
+      advertising, or promotion.
+  4.3 You may not remove, obscure, or alter any copyright notice,
+      license notice, or attribution information in the Project.
+  4.4 You may not circumvent the restrictions set by this License
+      through any technical means.
+  4.5 The above restrictions also apply to any Derivative Works
+      you distribute.
+
+────────────────────────────────────────────────────────────────────
+5. Disclaimer of Warranty
+────────────────────────────────────────────────────────────────────
+
+  The Project is provided "AS IS", without warranty of any kind,
+  express or implied, including but not limited to the warranties
+  of merchantability, fitness for a particular purpose, and
+  noninfringement.
+  The entire risk as to the quality and performance of the Project
+  rests with you.
+
+────────────────────────────────────────────────────────────────────
+6. Limitation of Liability
+────────────────────────────────────────────────────────────────────
+
+  In no event shall the Author be liable for any direct, indirect,
+  incidental, special, exemplary, or consequential damages
+  (including, without limitation, loss of data, loss of profit, or
+  business interruption) arising from the use of, or inability to
+  use, the Project, even if the Author has been advised of the
+  possibility of such damages.
+
+────────────────────────────────────────────────────────────────────
+7. Miscellaneous
+────────────────────────────────────────────────────────────────────
+
+  7.1 If any provision of this License is held invalid or
+      unenforceable, the validity and enforceability of the
+      remaining provisions shall not be affected.
+  7.2 This License shall be governed by the laws of the People's
+      Republic of China. Any dispute arising from this License
+      shall first be settled through friendly consultation; if no
+      agreement is reached, the dispute shall be submitted to the
+      competent people's court at the Author's location.
+  7.3 The Author reserves the right to revise the terms of this
+      License. Revised versions apply only to projects that the
+      Author has explicitly designated to be released under the
+      new version.
+
+================================================================================
+End of License  /  许可证正文结束
+================================================================================
