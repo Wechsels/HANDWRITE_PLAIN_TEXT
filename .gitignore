@@ -3,6 +3,7 @@ dist/
 dist-electron/
 out/
 release/
+.claude/
 
 outputs/*.png
 logs/*.log
