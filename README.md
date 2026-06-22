@@ -2,7 +2,7 @@
 
 中文（默认） | [English](#english)
 
-> **必须**把 `.ttf` 字体文件放入 `ttf_library/` 目录。启动后会自动列出供选择；目录为空时编辑器会**直接报错**。 
+> **必须**把 `.ttf` 字体文件放入 `ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。
 
 ---
 
@@ -10,21 +10,20 @@
 
 基于 `handright` 项目笔画级扰动（vendor 自 v8.2.0，BSD-3-Clause）+ 自建布局引擎，把纯文本渲染成"手写体"图片，用于公文写作，志愿书，思想汇报等无意义的手写文本。
 
+技术栈：**Electron + Vue 3 + TypeScript + FontAwesome + Node.js**。渲染管线使用 `@napi-rs/canvas` 做字体光栅化与像素级笔画扰动。
+
 ## 功能
 
 - **多窗口**：编辑窗口与预览窗口分离；预览支持缩放、拖动、打开输出文件夹；关闭预览后回到编辑窗口。
 - **全局参数**：纸张宽高、字体、字号、行距、字距、留白、颜色、倍率、6 类扰动 sigma、对齐、下划线。
 - **选区级覆盖**：在文本区选中字段后可单独调整字号、字距、横/纵/旋转笔画扰动、颜色、对齐、下划线。覆盖过的字段在编辑器中以红色背景标记；再次选中可看到已调参数。
-- **配置持久化**：保存/加载 TOML 文件，包含全部全局参数、文本、所有选区覆盖。
+- **配置保存**：保存/加载 TOML 文件，包含全部全局参数、文本、所有选区覆盖。
 
 ## 依赖
 
-- Python 3.13
-- PySide6 ≥ 6.9
-- Pillow ≥ 10
-- toml ≥ 0.10.2
-
-可选：pytest（开发/单测）。
+- Node.js ≥ 20
+- Electron（开发依赖，随 `npm install` 安装）
+- 运行时依赖：`@napi-rs/canvas`、`smol-toml`、`vue`、`vue-router`、`@fortawesome/fontawesome-free`
 
 ## 安装与运行
 
@@ -32,18 +31,23 @@
 # 1. 进入项目根
 cd HANDWRITE_PLAIN_TEXT
 
-# 2. 用 uv 创建虚拟环境并安装依赖
-uv sync
+# 2. 安装依赖
+npm install
 
-# 3. 启动
-uv run python src/main.py
+# 3. 启动（开发模式）
+npm run dev
 ```
 
-> 也可手动：`uv venv && uv pip install -e . && python src/main.py`
+打包：
+
+```bash
+npm run build      # 构建产物
+npm run package    # 构建并打包为可执行文件（electron-builder）
+```
 
 ## 字体
 
-**必须**把 `.ttf` 字体文件放入 `ttf_library/` 目录。启动后会自动列出供选择；目录为空时编辑器会**直接报错**。 `.ttf` 字体文件可搭配[HANDWRITE TTF FONTBUILDER](https://github.com/Wechsels/HANDWRITE_TTF_FONTBUILDER.git)项目生成。
+**必须**把 `.ttf` 字体文件放入 `ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。 `.ttf` 字体文件可搭配 [HANDWRITE TTF FONTBUILDER](https://github.com/Wechsels/HANDWRITE_TTF_FONTBUILDER.git) 项目生成。
 
 ## 输出
 
@@ -60,7 +64,20 @@ uv run python src/main.py
 ## 单测
 
 ```bash
-uv run --group test python -m pytest tests/ -q
+npm test
+```
+
+覆盖选区模型（`tests/rangeModel.test.ts`）与布局引擎（`tests/layout.test.ts`），断言与原 Python 版一致。布局测试需要 `ttf_library/` 下存在 `.ttf` 字体，否则该组自动跳过。
+
+## 项目结构
+
+```
+src/
+  shared/     # 主进程与渲染进程共用的纯逻辑（文档模型、调色板、类型）
+  main/       # Electron 主进程 + 渲染管线（layout/perturb/renderer/fontCache）
+  preload/    # contextBridge IPC 桥
+  renderer/   # Vue 3 渲染进程（编辑器 + 预览窗口）
+tests/        # Vitest 单测
 ```
 
 ## 许可证
@@ -85,6 +102,8 @@ uv run --group test python -m pytest tests/ -q
 
 A decoupled multi-window handwritten-text generator. Edit and preview live in separate windows; preview supports zoom/drag and opens the output folder directly.
 
+Stack: **Electron + Vue 3 + TypeScript + FontAwesome + Node.js**. The render pipeline uses `@napi-rs/canvas` for font rasterization and pixel-level stroke perturbation.
+
 ### Features
 
 - **Multi-window**: Editor + Preview (modal). Preview returns focus to editor on close.
@@ -95,16 +114,20 @@ A decoupled multi-window handwritten-text generator. Edit and preview live in se
 ### Install & run
 
 ```bash
-cd Code-05-HANDWRITE_PLAIN_TEXT
-uv sync
-uv run python src/main.py
+cd HANDWRITE_PLAIN_TEXT
+npm install
+npm run dev
 ```
+
+Package: `npm run package`.
 
 ### Tests
 
 ```bash
-uv run --group test python -m pytest tests/ -q
+npm test
 ```
+
+Covers the range model (`tests/rangeModel.test.ts`) and the layout engine (`tests/layout.test.ts`). Layout tests require a `.ttf` font in `ttf_library/`; otherwise that suite is skipped.
 
 ### License
 
