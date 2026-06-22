@@ -1,14 +1,14 @@
 ================================================================================
 Wechsels 非商用许可证 v1.0  (WNCPL v1.0)
 Wechsels Non-Commercial License v1.0
-Copyright (c) 2026 Wechsels (hry)
+Copyright (c) 2026 Yurui He (GitHub: Wechsels)
 ================================================================================
 
 
 中文版
 ================================================================================
 
-本许可证适用于 Wechsels(昵称:hry)创作并以本许可证发布的开源项目。
+本许可证适用于 Yurui He(GitHub:Wechsels)创作并以本许可证发布的开源项目。
 在不违背本许可证条款的前提下,您可以自由地查看、修改及分发本项目。
 使用本项目即视为您已阅读、理解并同意本许可证的全部条款。
 
@@ -17,7 +17,7 @@ Copyright (c) 2026 Wechsels (hry)
 ────────────────────────────────────────────────────────────────────
 
   1.1 "本项目"   指受本许可证保护的软件、源代码、文档及相关资源。
-  1.2 "作者"     指 Wechsels(昵称:hry),即本项目的版权持有人。
+  1.2 "作者"     指 Yurui He(GitHub:Wechsels),即本项目的版权持有人。
   1.3 "使用者"   指依据本许可证使用本项目的任何个人或组织。
   1.4 "衍生作品" 指基于本项目修改、翻译、改编或以其他方式二次创作
                  的作品,不论其形式如何。
@@ -50,7 +50,7 @@ Copyright (c) 2026 Wechsels (hry)
   您在使用、再分发本项目或衍生作品时,必须同时满足以下全部条件:
 
     a) 在源代码及所有副本的显著位置保留以下版权声明:
-         Copyright (c) 2026 Wechsels (hry)
+         Copyright (c) 2026 Yurui He (GitHub: Wechsels)
     b) 随本项目或衍生作品的所有分发版本附带本许可证文件的完整副本;
     c) 在衍生作品中以显著方式注明所做的修改及修改日期;
     d) 不得以任何形式暗示作者对您的衍生作品进行了背书、推荐或担保;
@@ -103,8 +103,8 @@ Copyright (c) 2026 Wechsels (hry)
 English Version
 ================================================================================
 
-This License applies to the open-source project created by Wechsels
-(nickname: hry) and released under this License.
+This License applies to the open-source project created by Yurui He
+(GitHub: Wechsels) and released under this License.
 Subject to the terms below, you are free to view, modify, and
 redistribute this Project.
 By using this Project, you acknowledge that you have read, understood,
@@ -116,7 +116,7 @@ and agreed to all terms of this License.
 
   1.1 "Project"       means the software, source code, documentation,
                       and related resources protected by this License.
-  1.2 "Author"        means Wechsels (nickname: hry), the copyright
+  1.2 "Author"        means Yurui He (GitHub: Wechsels), the copyright
                       holder of the Project.
   1.3 "User"          means any individual or organization that uses
                       the Project under this License.
@@ -163,7 +163,7 @@ and agreed to all terms of this License.
 
     a) preserve the following copyright notice in a prominent location
        in the source code and all copies:
-         Copyright (c) 2026 Wechsels (hry)
+         Copyright (c) 2026 Yurui He (GitHub: Wechsels)
     b) include a complete copy of this License file with every
        distributed version of the Project or Derivative Works;
     c) clearly indicate in the Derivative Work any modifications made

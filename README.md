@@ -75,7 +75,7 @@ uv run --group test python -m pytest tests/ -q
 
 第三方库 `handright`(vendor 化的笔画扰动代码)继续遵循其原始 **BSD-3-Clause** 许可证,详见 `LICENSE-handright.txt`。
 
-详情请参阅 [LICENSE](LICENSE) 文件。Copyright (c) 2026 Wechsels (hry)。
+详情请参阅 [LICENSE](LICENSE) 文件。Copyright (c) 2026 Yurui He (GitHub: Wechsels)。
 
 ---
 
@@ -118,4 +118,4 @@ This project is released under the **Wechsels Non-Commercial License v1.0 (WNCPL
 
 The vendored `handright` stroke-perturbation code remains under its original **BSD-3-Clause** license — see `LICENSE-handright.txt` for details.
 
-See the [LICENSE](LICENSE) file for full terms. Copyright (c) 2026 Wechsels (hry).
+See the [LICENSE](LICENSE) file for full terms. Copyright (c) 2026 Yurui He (GitHub: Wechsels).
