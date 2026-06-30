@@ -2,7 +2,7 @@
 
 中文（默认） | [English](#english)
 
-> **必须**把 `.ttf` 字体文件放入 `ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。
+> **必须**把 `.ttf` 字体文件放入 `resources/ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。
 
 ---
 
@@ -49,7 +49,7 @@ npm run package    # 构建并打包为可执行文件（electron-builder）
 
 ## 字体
 
-**必须**把 `.ttf` 字体文件放入 `ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。 `.ttf` 字体文件可搭配 [HANDWRITE TTF FONTBUILDER](https://github.com/Wechsels/HANDWRITE_TTF_FONTBUILDER.git) 项目生成。
+**必须**把 `.ttf` 字体文件放入 `resources/ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。 `.ttf` 字体文件可搭配 [HANDWRITE TTF FONTBUILDER](https://github.com/Wechsels/HANDWRITE_TTF_FONTBUILDER.git) 项目生成。
 
 ## 输出
 
