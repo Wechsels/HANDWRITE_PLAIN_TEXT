@@ -40,13 +40,6 @@ npm install
 npm run dev
 ```
 
-打包：
-
-```bash
-npm run build      # 构建产物
-npm run package    # 构建并打包为可执行文件（electron-builder）
-```
-
 ## 字体
 
 **必须**把 `.ttf` 字体文件放入 `resources/ttf_library/` 目录。启动后会自动列出供选择；目录为空时点预览会**直接报错**。 `.ttf` 字体文件可搭配 [HANDWRITE TTF FONTBUILDER](https://github.com/Wechsels/HANDWRITE_TTF_FONTBUILDER.git) 项目生成。
@@ -62,14 +55,6 @@ npm run package    # 构建并打包为可执行文件（electron-builder）
 3. 调整要覆盖的项，点击「应用到选区」→ 该字段在编辑器中以红色背景标记。
 4. 再次选中该字段，参数面板会显示已调参数。
 5. 点击「清除选区覆盖」可恢复全局默认。
-
-## 单测
-
-```bash
-npm test
-```
-
-覆盖选区模型（`tests/rangeModel.test.ts`）与布局引擎（`tests/layout.test.ts`），断言与原 Python 版一致。布局测试需要 `ttf_library/` 下存在 `.ttf` 字体，否则该组自动跳过。
 
 ## 项目结构
 
