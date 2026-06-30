@@ -18,6 +18,49 @@
     "package": "electron-vite build && electron-builder",
     "build:win": "electron-vite build && electron-builder --win"
   },
+  "build": {
+    "productName": "HandWrite Plain Text",
+    "appId": "com.wechsels.handwrite",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "package.json",
+      "node_modules/@napi-rs/canvas/**/*",
+      "node_modules/@napi-rs/canvas-win32-x64-msvc/**/*",
+      "node_modules/smol-toml/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "ttf_library",
+        "to": "ttf_library",
+        "filter": ["**/*"]
+      }
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/@napi-rs/canvas-win32-x64-msvc/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "artifactName": "${productName}-${version}-${arch}-setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "HandWrite Plain Text"
+    }
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@napi-rs/canvas": "^0.1.67",

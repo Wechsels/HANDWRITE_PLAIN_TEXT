@@ -12,6 +12,8 @@
 
 技术栈：**Electron + Vue 3 + TypeScript + FontAwesome + Node.js**。渲染管线使用 `@napi-rs/canvas` 做字体光栅化与像素级笔画扰动。
 
+另提供 `cli-anything-handwrite` Python CLI（`agent-harness/`），通过 `vite.config.cli.ts` 构建的 headless Node 桥调用**同一渲染管线**，供 Agent 程序化驱动。
+
 ## 功能
 
 - **多窗口**：编辑窗口与预览窗口分离；预览支持缩放、拖动、打开输出文件夹；关闭预览后回到编辑窗口。
@@ -72,12 +74,27 @@ npm test
 ## 项目结构
 
 ```
-src/
-  shared/     # 主进程与渲染进程共用的纯逻辑（文档模型、调色板、类型）
-  main/       # Electron 主进程 + 渲染管线（layout/perturb/renderer/fontCache）
-  preload/    # contextBridge IPC 桥
-  renderer/   # Vue 3 渲染进程（编辑器 + 预览窗口）
-tests/        # Vitest 单测
+src/              # Vue 渲染进程 + Electron 主进程 + 渲染管线
+  shared/         # 主进程与渲染进程共用的纯逻辑（文档模型、调色板、类型）
+  main/           # Electron 主进程 + 渲染管线（layout/perturb/renderer/fontCache）
+  preload/        # contextBridge IPC 桥
+  renderer/       # Vue 3 渲染进程（编辑器 + 预览窗口）
+tests/            # Vitest 单测
+agent-harness/    # cli-anything-handwrite Python CLI（调用同一渲染管线）
+skills/           # 技能描述
+```
+
+## Agent CLI
+
+`agent-harness/` 下是 `cli-anything-handwrite`：基于 Click 的 Python CLI + REPL，调用与 GUI 相同的渲染管线（通过 `vite.config.cli.ts` 构建出的 `agent-harness/cli_anything/handwrite/scripts/render_backend.mjs` 作为 headless Node 桥）。所有命令支持 `--json` 输出。
+
+```bash
+cd agent-harness
+pip install -e .                           # 安装 CLI
+npx vite build --config ../vite.config.cli.ts   # 构建 headless 渲染后端（首次需要）
+handwrite-cli --help
+handwrite-cli project new --text "你好"
+handwrite-cli render run --out ./out
 ```
 
 ## 许可证
@@ -104,6 +121,8 @@ A decoupled multi-window handwritten-text generator. Edit and preview live in se
 
 Stack: **Electron + Vue 3 + TypeScript + FontAwesome + Node.js**. The render pipeline uses `@napi-rs/canvas` for font rasterization and pixel-level stroke perturbation.
 
+Also ships `cli-anything-handwrite`, a Python CLI under `agent-harness/` that drives the same render pipeline via a headless Node bridge (built with `vite.config.cli.ts`).
+
 ### Features
 
 - **Multi-window**: Editor + Preview (modal). Preview returns focus to editor on close.
@@ -128,6 +147,23 @@ npm test
 ```
 
 Covers the range model (`tests/rangeModel.test.ts`) and the layout engine (`tests/layout.test.ts`). Layout tests require a `.ttf` font in `ttf_library/`; otherwise that suite is skipped.
+
+### Project layout
+
+```
+src/              # Vue renderer + Electron main + render pipeline
+agent-harness/    # cli-anything-handwrite Python CLI (same render pipeline)
+skills/           # Skill descriptions
+```
+
+### Agent CLI
+
+```bash
+cd agent-harness
+pip install -e .
+npx vite build --config ../vite.config.cli.ts   # build headless backend (once)
+handwrite-cli --help
+```
 
 ### License
 

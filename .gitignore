@@ -12,3 +12,15 @@ logs/*.log
 *.local
 .vscode/*
 !.vscode/extensions.json
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# user-provided ttf fonts (repo ships only ttf_library/.gitkeep;
+# README instructs users to drop their own .ttf files in)
+ttf_library/*.ttf
+
+# cli-anything-handwrite build/test artifacts
+agent-harness/cli_anything_handwrite.egg-info/
+**/.pytest_cache/
+**/__pycache__/
